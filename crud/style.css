@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:200,300,400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto',sans-serif
+}
+
+
+
+body {
+    background: url('https://www.teahub.io/photos/full/266-2665064_anime-wallpaper-soul-eater.jpg');
+    background-size: cover;
+}
+
+main {
+    max-width: 1170px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 3rem;
+    display: grid;
+    place-items: center;
+}
+
+.crud-container {
+    padding: 1rem;
+    min-width: 30vw;
+    min-height: 70vh;
+    margin: 0 auto;
+    background: rgba(0,0,0,.5);
+    border-radius: 15px;
+}
+.title{
+    margin-top: -10rem;
+    border: 1px solid red;
+}
+
+
+.tr-head tr th{
+    padding: .5rem 4rem;
+    color: #fff;
+}
+
+.tr-dados {
+    color: #fff;
+}
+
+
+.off {
+    display: none;
+}
+
+
+form {
+    margin: 0 auto;
+    min-height: 20vh;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+form input, button{
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    border-radius: 5px 0 0 5px
+    
+}
+button.alterado {
+    margin-left: .1rem;
+}
+
+form button {
+    background: white;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease .3s;
+
+}
+
+form button:hover {
+    background: black;
+    color: white;
+}
+
+
+
+.dados {
+    border-radius: 15px;
+    min-width: 30vw;
+    background: #270a1e70;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.dados table th{
+    min-width: 15vw;
+    line-height: 2;
+}
+.dados table td {
+    background: #444;
+    border-radius: 15px;
+    
+    text-align: center;
+    min-width: 15vw;
+}
+
+
+td.dado-materia,
+td.dado-horas{
+    text-align: center;
+    color: white;
+    padding: .3rem 1rem;
+    
+    
+}
+
+button.excluir,
+button.alterar {
+    color: white;
+    background: black;
+    border-radius: .5rem;
+    font-size: .875rem;
+    transition: all ease .4;
+    cursor: pointer;
+}
+.fa-undo-alt,
+.fa-trash,
+.fa-plus-square,
+.fa-check {
+    pointer-events: none;
+}
+
+button.excluir:hover,
+button.alterar:hover {
+    background: white;
+    color: black;
+}
+button.alterar{
+ margin-left: 4rem;   
+}
+
+.sem-evento{
+    pointer-events: none;
+}
+button.sem-evento {
+    background: #9999;
+    color: #444;
+}
+
+.sem-evento i{
+    text-decoration: line-through;
+}
+
